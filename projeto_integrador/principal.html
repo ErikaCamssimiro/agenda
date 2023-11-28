@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clínica Anakai</title>
+  <style>
+  	.nav {
+  		width: 100%;
+  		height: 45px;
+  		background-color: mediumpurple;
+  		text-align: center;
+  		border: 1px solid #000;
+			border-color: purple;
+  	}
+
+  	h3{
+  		color: #fff;
+  		font-size: 16px;
+  	}
+
+  	.cadastro{
+  		color: whitesmoke;
+  		font-family: 'Kaushan Script', cursive;
+  		text-decoration: none;
+  	}
+
+  	#nav{
+  		width: 100%;
+  		height: 10px;
+  		background-color: mediumpurple;
+  	}
+
+    body {
+      font-family: Arial, sans-serif;;
+      margin: 0;
+      padding: 0;
+      background-color: whitesmoke;
+    }
+
+    header {
+      background-color: rgb(255,255,255);
+      color: #ffa333;
+      padding: 1em;
+      text-align: center;
+      font-family:'Cedarville Cursive', cursive;
+    }
+
+    img{
+			width: 300px;
+			height: 300px;
+			border-radius: 50%;
+			border: 2px solid;
+			border-color: purple;
+		}
+
+		label{
+			color: #000;
+		}
+
+    section {
+      max-width: 1000px;
+      margin: 2em auto;
+      padding: 1em;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+  		border: 1px solid;
+			border-color: purple;
+
+    }
+
+    #topo{
+    	border: 1px solid;
+			border-color: purple;
+    }
+
+    input[type="text"] {
+      width: 80%;
+      padding: 0.5em;
+      margin-right: 0.5em;
+    }
+
+    input[type="submit"] {
+      padding: 0.5em 1em;
+      background-color: #8953bb;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-size: 15px;
+      font-family: 'Arial', sans-serif;
+    }
+
+    input[type="submit"]:hover {
+      background-color: mediumpurple;
+      font-size: 15px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1em;
+    }
+
+    th, td {
+      border: 1px solid #002;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #ffa333;
+      color: #fff;
+    }
+
+  </style>
+</head>
+<body>
+	<nav id="nav">
+		
+	</nav>
+
+  <header>
+	  <a href="index.php" target="_blank" id="logo_principal">
+	  	<img src="img/Logo_Principal.jpeg" alt="Banner com logo da clinica anakai. borboleta com outras borboletas e fundadora, Êmili Cassimiro">
+	  </a>
+	  <h2>Espaço Anakai<h2>
+	</header>
+	<nav class="nav">
+		<a href="registro_pacientes.php" target="_blank" class="cadastro"><h3>Cadastro Paciente</h3></a>
+	</nav>
+
+<section id="topo">
+    <form action="buscar_pacientes.php" method="post>
+      <label for="search"><b>Pesquisar:</b></label>
+      <input type="text" id="search" name="search" placeholder="Digite o nome do paciente...">
+      <input type="submit" value="Buscar">
+    </form>
+</section>
+
+<section>
+  <table>
+  <thead>
+    <tr>
+      <th>Cod</th>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Telefone</th>
+        <th>Data Nascimento</th>
+        <th>Comentário</th>
+        <th>Avanço Paciente</th>
+    </tr>
+    </thead>
+<tbody>
+    <tr>
+    <td>0</td>
+    <td>você</td>
+    <td>você@gmail.com</td>
+    <td>(01)2345-6789</td>
+    <td>01/01/0001</td>
+    <td><textarea rows="3" cols="30" placeholder="Ex: isso deu muito trabalho!"></textarea></td>
+    <td><input type="number" placeholder="Insira a nota" min="1" max="5"></td>
+    </tr>
+</tbody>
+</table>
+</section>
+</body>
+</html>
+
